@@ -62,11 +62,8 @@ Game Messages
 - FireEventServerSide
 - DisplayMessageBox
 
-LEVEL
------
-
-- LEVEL:GetCinematicInfo(cinematicName: string)
-- LEVEL:GetCurrentZoneID()
+CAMERA
+------
 
 GAMEOBJ
 -------
@@ -78,10 +75,33 @@ GAMEOBJ
 - GAMEOBJ:GetLocalCharID() -> ObjectID
 - GAMEOBJ:DeleteObject(obj: GameObject)
 
+LEVEL
+-----
+
+- LEVEL:GetCinematicInfo(cinematicName: string)
+- LEVEL:GetCurrentZoneID()
+- LEVEL:GetSpawnerByName(spawnerName: string)
+
+PHYSICS
+-------
+
+RESMGR
+------
+
+SOUND
+-----
+
 UI
 --
 
 - UI:SendMessage(msg: string, data: NDGfxValue)
+
+Spawner
+-------
+
+- spawner:SpawnerActivate()
+- spawner:SpawnerDeactivate()
+- spawner:SpawnerReset()
 
 Timer
 -----
