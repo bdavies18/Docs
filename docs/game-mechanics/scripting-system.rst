@@ -99,12 +99,6 @@ RESMGR
     bIsSmashable = bool is the object smashable
   }
   
-  <message name="MiniGameBalanceTeams"
-           protocol="request">
-		<doc>
-			Balance how many players are on each team (useful when people are leaving).
-		</doc>
-	</message>
 
 
 UI
