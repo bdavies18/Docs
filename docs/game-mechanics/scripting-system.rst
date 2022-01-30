@@ -81,6 +81,32 @@ GAMEOBJ
 - GAMEOBJ:GetLocalCharID() -> ObjectID
 - GAMEOBJ:DeleteObject(obj: GameObject)
 
+RESMGR
+------
+
+- RESMGR:GetFilesInDir(string directory, string extension (blank for all extensions), bool check sub directories, string wildcard)
+- RESMGR:LoadObject
+  {
+    objectTemplate = int object template,
+    x = float x location,
+    y = float y location,
+    z = float z position,
+    rw = float w rotation,
+    rx = float x rotation,
+    ry = float y rotation,
+    rz = float z rotation,
+    owner = GameObject game object,
+    bIsSmashable = bool is the object smashable
+  }
+  
+  <message name="MiniGameBalanceTeams"
+           protocol="request">
+		<doc>
+			Balance how many players are on each team (useful when people are leaving).
+		</doc>
+	</message>
+
+
 UI
 --
 
